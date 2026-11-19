@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro estudiantil</title>
+    <link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Registro estudiantil</h1>
+        <h6>Yaneth Alejandra Medrano López | 202610160123</h6>
+
+        <form id="formulario">
+<input id="cuenta" placeholder="Número de cuenta" required>
+<input id="nombre" placeholder="Nombre del estudiante" required>
+<input id="carrera" placeholder="Carrera" required>
+<button>Registrar</button>
+</form>
+
+<p id="mensaje" role="status"> </p>
+<button id="exportar">Exportar a CSV</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Cuenta</th>
+            <th>Nombre</th>
+            <th>Carrera</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody id="lista"></tbody>
+</table>
+    </main>
+</body>
+</html>
